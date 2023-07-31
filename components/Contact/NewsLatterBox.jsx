@@ -4,22 +4,22 @@ import axios from "axios";
 
 
 const NewsLatterBox = async () => {
-  let backend_url;
-  try {
-    const res = await axios.get('/api/backend-url'); 
-    if (!res.data) {
-      toast.error('No backend url was found in the response.');
-    } 
-    backend_url = res.data.url; 
-  } catch (err) {
-    toast.error(err.message); 
-  }
+  // let backend_url;
+  // try {
+  //   const res = await axios.get('/api/backend-url'); 
+  //   if (!res.data) {
+  //     toast.error('No backend url was found in the response.');
+  //   } 
+  //   backend_url = res.data.url; 
+  // } catch (err) {
+  //   toast.error(err.message); 
+  // }
 
   async function onSubmit() { 
     const name = document.getElementById("name_news").value; 
     const email = document.getElementById("email_news").value; 
     
-    await fetch(backend_url+ "/chats/subscribe", { 
+    await fetch("https://fastapi-dqdi.onrender.com" + "/chats/subscribe", { 
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

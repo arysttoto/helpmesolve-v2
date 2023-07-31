@@ -12,7 +12,6 @@ import { useSignInModal } from "./sign-in-modal";
 import { signOut } from "next-auth/react";
 
 const Header = ({ session }) => {
-  console.log(session);
 
   const { SignInModal, setShowSignInModal } = useSignInModal();  
   // Navbar toggle 
