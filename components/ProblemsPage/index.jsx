@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import ReactPaginate from 'react-paginate';
 import styles from "./pagination.module.css"; 
 
-import SingleProblem from "@/components/ProblemsPage/SingleProblem";
+import SingleProblem from "./singleProblem";
 
 
 function ProblemsPage({ problems }) {
