@@ -16,8 +16,9 @@ const NewsLatterBox = async () => {
   }
 
   async function onSubmit() { 
-    const name = document.getElementById("name").value; 
-    const email = document.getElementById("email").value; 
+    const name = document.getElementById("name_news").value; 
+    const email = document.getElementById("email_news").value; 
+    
     await fetch(backend_url+ "/chats/subscribe", { 
       method: 'POST',
       headers: {
@@ -28,8 +29,8 @@ const NewsLatterBox = async () => {
         email: email 
       }),  
     }); 
-    document.getElementById("name").value = ""; 
-    document.getElementById("email").value = ""; 
+    document.getElementById("name_news").value = ""; 
+    document.getElementById("email_news").value = ""; 
     toast.success("Wait for interesting news!"); 
   } 
 
@@ -46,20 +47,18 @@ const NewsLatterBox = async () => {
       </p>
       <div> 
         <input
-          id="name"
+          id="name_news"
           type="text"
           name="name"
           placeholder="Enter your name"
           className="mb-4 w-full rounded-md border border-body-color border-opacity-10 py-3 px-6 text-base font-medium text-body-color placeholder-body-color outline-none focus:border-primary focus:border-opacity-100 focus-visible:shadow-none dark:border-white dark:border-opacity-10 dark:bg-[#242B51] focus:dark:border-opacity-50"
-          required 
         />
         <input
-          id="email"
+          id="email_news"
           type="email"
           name="email"
           placeholder="Enter your email"
           className="mb-4 w-full rounded-md border border-body-color border-opacity-10 py-3 px-6 text-base font-medium text-body-color placeholder-body-color outline-none focus:border-primary focus:border-opacity-100 focus-visible:shadow-none dark:border-white dark:border-opacity-10 dark:bg-[#242B51] focus:dark:border-opacity-50"
-          required
         />
         <button
           onClick={onSubmit}

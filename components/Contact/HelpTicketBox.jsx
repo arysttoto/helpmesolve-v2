@@ -66,7 +66,7 @@ const HelpTicketBox = async () => {
                         type="text"
                         placeholder="Enter your name"
                         className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
-                        required
+                        
                       />
                     </div>
                   </div>
@@ -83,7 +83,7 @@ const HelpTicketBox = async () => {
                         type="email"
                         placeholder="Enter your email"
                         className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
-                        required
+                        
                       />
                     </div>
                   </div>
@@ -101,7 +101,7 @@ const HelpTicketBox = async () => {
                         rows={5}
                         placeholder="Enter your Message"
                         className="w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
-                        required 
+                        
                       ></textarea>
                     </div>
                   </div>
