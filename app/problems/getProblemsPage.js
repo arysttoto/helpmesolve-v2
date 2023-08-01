@@ -16,8 +16,8 @@ const getProblemsPage = async (page, access_token) => {
   .then(data => { 
     // Save the response data to the session constant  
     problems = data; 
-  })
-  .catch(error => {
+  }) 
+  .catch(error => { 
     // Handle any errors that occurred during the fetch request
     console.error('Error:', error); 
   });

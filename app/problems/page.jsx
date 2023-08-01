@@ -19,7 +19,7 @@ export default async function Problems ({ searchParams }) {
     redirect("/problems?page=1"); 
   } 
   const problems = await getProblemsPage(searchParams.page, session.user.accessToken); 
-  console.log(problems); 
+  // console.log(problems); 
   return (
     <>
     <Breadcrumb

@@ -9,7 +9,7 @@ import SingleProblem from "./singleProblem";
 
 function ProblemsPage({ problems }) {
     const router = useRouter();
-
+    
     const pagginationHandler = (page) => { 
         router.push(`/problems/?page=${(page.selected+1)}`); 
         // GIVE IT SOME TIME TO RENDER 

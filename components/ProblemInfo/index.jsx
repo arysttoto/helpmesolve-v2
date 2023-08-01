@@ -27,7 +27,7 @@ export default function ProblemInfo({ problem }) {
           <div className="container">
             <div className="-mx-4 flex flex-wrap justify-center">
               <div className="w-full px-4 lg:w-8/12">
-                <div>
+                <div> 
                   <h2 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
                     { problem.title } 
                   </h2>
@@ -78,9 +78,14 @@ export default function ProblemInfo({ problem }) {
                     <h3 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
                       Solution Section 
                     </h3>
-                    <pre className="whitespace-pre-wrap mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                      { problem.solution } 
-                    </pre>
+                    {problem.solution.map((item, index) => (
+                      <p
+                        key={index} // It's important to set a unique key when mapping through lists.
+                        className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed"
+                      >
+                        { item }
+                      </p>
+                    ))}
                     <h3 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
                       Code Section 
                     </h3>

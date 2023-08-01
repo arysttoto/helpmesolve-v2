@@ -18,17 +18,22 @@ const inter = Inter({ subsets: ["latin"] });
 import { toast } from "react-hot-toast";
 import { useSearchParams } from 'next/navigation'
 import { useRouter } from "next/navigation";
+import { useEffect } from 'react';
+
 
 export default function Home() {
   const router = useRouter(); 
   const searchParams = useSearchParams();
- 
-  const signedIn = searchParams.get('signedIn') 
-  
-  if (signedIn) {  
-    router.push("/");
-    toast.error("Sign In please!"); 
-  } 
+
+  useEffect(() => {  
+    const signedIn = searchParams.get('signedIn');
+
+    if (signedIn) {
+      router.push("/");
+      toast.error("Sign In please!");
+    } 
+  }, []); // Empty dependency array ensures this runs only on component mount
+
 
   return (
     <> 

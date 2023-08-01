@@ -13,7 +13,7 @@ const BlogDetailsPage = () => {
                 <h2 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
                   10 amazing sites to download stock photos & digital assets for
                   free
-                </h2>
+                </h2> 
                 <div className="mb-10 flex flex-wrap items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-white dark:border-opacity-10">
                   <div className="flex flex-wrap items-center">
                     <div className="mr-10 mb-5 flex items-center">
@@ -95,7 +95,7 @@ const BlogDetailsPage = () => {
                     </a>
                   </div>
                 </div>
-                <div>
+                <div> 
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                     Duis aute irure dolor in reprehenderit in voluptate velit
                     esse cillum dolore eu fugiat nulla pariatur. Excepteur sint

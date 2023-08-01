@@ -7,7 +7,7 @@ const SingleProblem = ({ problem }) => {
   return (
     <>
       <div
-        className="m-5 h-56 wow fadeInUp relative overflow-hidden rounded-md bg-white shadow dark:bg-dark"
+        className="m-5 h-64 wow fadeInUp relative overflow-hidden rounded-md bg-white shadow dark:bg-dark"
         data-wow-delay=".1s"
       >
         <div className="p-6 sm:p-8 md:py-8 md:px-6 lg:p-8 xl:py-8 xl:px-5 2xl:p-8">
