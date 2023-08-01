@@ -15,7 +15,7 @@ export default async function Problems ({ searchParams }) {
     redirect("/?signedIn=false"); 
   } 
 
-  if (!searchParams?.page) { 
+  if (!searchParams?.page) {   
     redirect("/problems?page=1"); 
   } 
   const problems = await getProblemsPage(searchParams.page, session.user.accessToken); 

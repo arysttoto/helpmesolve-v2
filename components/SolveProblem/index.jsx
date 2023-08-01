@@ -4,6 +4,7 @@ import { Loader } from "../shared/icons";
 import { redirect } from "next/navigation";
 import { useState } from "react";
 
+
 function SolveProblemForm(props) {
     const router = useRouter(); 
 
@@ -27,11 +28,9 @@ function SolveProblemForm(props) {
         const data = await response.json();
 
         if (!response.ok) { 
-            console.log("Error occured");
-        }
-        else {
-            router.push("/solved/"+data.post_id);  
+          console.log("Error occured");
         } 
+        router.push("/solved/"+data.post_id);  
     } 
 
     return (
