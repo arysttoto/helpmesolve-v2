@@ -1,8 +1,7 @@
 {
-    "functions": {
-      "/api/solve": {
-        "memory": 3008,
-        "maxDuration": 60
-      } 
+  "functions": {
+    "api/**/*.js": {
+      "maxDuration": 30
     }
-  } 
+  }
+}
