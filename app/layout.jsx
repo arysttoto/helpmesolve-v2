@@ -3,6 +3,7 @@ import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 import Nav from "@/components/Nav";
 import { Suspense } from "react";
+import { Analytics } from '@vercel/analytics/react';
 
 
 export default function RootLayout({ children }) {
@@ -21,7 +22,8 @@ export default function RootLayout({ children }) {
           </Suspense> 
           <main className="">{children}</main>    
           <ScrollToTop /> 
-        </Providers>
+        </Providers> 
+        <Analytics /> 
       </body> 
     </html>
   );
