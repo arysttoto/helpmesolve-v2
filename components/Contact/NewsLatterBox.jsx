@@ -13,13 +13,13 @@ const NewsLatterBox = async () => {
   //   backend_url = res.data.url; 
   // } catch (err) {
   //   toast.error(err.message); 
-  // }
+  // } 
 
   async function onSubmit() { 
     const name = document.getElementById("name_news").value; 
     const email = document.getElementById("email_news").value; 
     
-    await fetch("https://fastapi-dqdi.onrender.com" + "/chats/subscribe", { 
+    await fetch(process.env.NEXT_PUBLIC_URL+ "/chats/subscribe", { 
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

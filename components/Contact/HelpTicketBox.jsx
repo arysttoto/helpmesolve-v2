@@ -20,7 +20,7 @@ const HelpTicketBox = async () => {
         const email = document.getElementById("email").value; 
         const message = document.getElementById("message").value; 
     
-        await fetch("https://fastapi-dqdi.onrender.com"+ "/chats/help", {
+        await fetch(process.env.NEXT_PUBLIC_URL+ "/chats/help", {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

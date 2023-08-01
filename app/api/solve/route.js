@@ -3,8 +3,7 @@ import { NextResponse } from 'next/server';
 export async function POST(req) {
     let post_id; 
     const body = await req.json(); 
-    const backend_url = process.env.BACKEND_URL; 
-    console.log(backend_url, body.accessToken); 
+    const backend_url = process.env.BACKEND_URL;
 
     await fetch((backend_url + "/chats/solve"), {  
         method: "POST", 
