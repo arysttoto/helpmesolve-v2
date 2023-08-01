@@ -1,6 +1,6 @@
 {
     "functions": {
-      "api/solve/route.js": {
+      "/api/solve": {
         "memory": 3008,
         "maxDuration": 60
       } 
