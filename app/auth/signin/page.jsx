@@ -2,12 +2,17 @@
 import Link from "next/link";
 
 import { signIn } from "next-auth/react";
+import { use, useState } from "react";
+import Loading from "@/app/loading";
+
 
 const SigninPage = () => {
-  
-  const onSubmit = async () => {
+  const [loading, setLoading] = useState(false); 
+
+  const onSubmit = async () => { 
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
+    setLoading(true); 
     const result = await signIn("credentials", {
       email: email,
       password: password, 
@@ -16,8 +21,9 @@ const SigninPage = () => {
     })
   }
 
-  return (
+  return ( 
     <>
+    {loading ? <Loading /> : 
       <section className="relative z-10 overflow-hidden pt-36 pb-16 md:pb-20 lg:pt-[180px] lg:pb-28">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
@@ -178,6 +184,7 @@ const SigninPage = () => {
           </svg>
         </div>
       </section>
+    }
     </>
   );
 };

@@ -1,5 +1,5 @@
 export default function Loading() {
-    return (
+    return ( 
         <div className="main-body flex h-screen flex-col items-center justify-center"> 
             <svg
             aria-hidden="true"

@@ -1,7 +1,7 @@
 "use client";
 import { ThemeProvider } from "next-themes";
 import toast, { Toaster } from 'react-hot-toast';
-import ChatWidget from "@/components/ChatWidget"; 
+// import ChatWidget from "@/components/ChatWidget"; 
 
 
 export function Providers({ children }) {
@@ -12,7 +12,7 @@ export function Providers({ children }) {
       {children} 
     </ThemeProvider> 
     {/* chat widget */} 
-    <ChatWidget /> 
+    {/* <ChatWidget />  */} 
     {/* chat widget */} 
     <Toaster /> 
     </>
