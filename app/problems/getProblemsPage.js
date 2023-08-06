@@ -2,10 +2,7 @@ import axios from 'axios';
 
 const getProblemsPage = async (page, access_token) => {
     let problems; 
-    if (!page) {
-        page = 1; 
-    } 
-    await fetch((process.env.BACKEND_URL + "/chats/problems/"+page), { 
+    await fetch((process.env.NEXT_PUBLIC_URL + "/chats/problems/"+page), { 
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -25,4 +22,4 @@ const getProblemsPage = async (page, access_token) => {
   return problems; 
 };
 
-export default getProblemsPage; 
+export default getProblemsPage;  

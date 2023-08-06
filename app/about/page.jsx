@@ -9,7 +9,7 @@ const AboutPage = () => {
     <>
       <Breadcrumb
         pageName="About Page"
-        description="Want to know more about our website? Thanks! We are waiting for your feedback."
+        description="Want to know more about our website?"
       />
       <AboutSectionOne />
       <AboutSectionTwo />

@@ -2,6 +2,10 @@ import SharePost from "@/components/Blog/SharePost";
 import TagButton from "@/components/Blog/TagButton";
 import Image from "next/image";
 
+import Markdown from 'markdown-to-jsx';
+import CodeBlock from "./code"; 
+
+
 export default function ProblemInfo({ problem }) {
     const dateString = problem.created_at;
     const dateObj = new Date(dateString);
@@ -14,13 +18,13 @@ export default function ProblemInfo({ problem }) {
       year: "numeric",
       month: "long",
       day: "numeric",
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-      timeZoneName: "short",
+      // hour: "2-digit",
+      // minute: "2-digit",
+      // second: "2-digit",
+      // timeZoneName: "short",
     };
     const customFormattedDate = dateObj.toLocaleString(undefined, options); // Output: "July 30, 2023, 5:54:37 PM GMT"
-  
+    
     return (
       <>
         <section className="pt-[150px] pb-[120px]">
@@ -90,9 +94,14 @@ export default function ProblemInfo({ problem }) {
                       Code Section 
                     </h3>
                     <pre className="whitespace-pre-wrap mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                      { problem.code } 
+                      <Markdown
+                        options={{
+                          forceBlock: true,
+                          overrides: { pre: { component: CodeBlock } } 
+                      }}> 
+                        { problem.code }
+                      </Markdown> 
                     </pre> 
-                    
                     <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                       Learn more with us!
                     </p>

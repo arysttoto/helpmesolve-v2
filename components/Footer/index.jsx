@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <footer
-        className="wow fadeInUp relative z-10 bg-primary bg-opacity-5 pt-16 md:pt-20 lg:pt-24"
+        className="wow fadeInUp relative z-10 bg-primary bg-opacity-5 pt-16 md:pt-16 lg:pt-16"
         data-wow-delay=".1s"
       >
         <div className="container">
@@ -21,7 +21,7 @@ const Footer = () => {
                   <a
                     href="https://www.facebook.com/profile.php?id=100092639652502"
                     aria-label="social-link"
-                    className="mr-6 text-[#CED3F6] hover:text-primary"
+                    className="mr-6 text-amber-400 hover:text-primary"
                   >
                     <svg
                       width="9"
@@ -35,7 +35,7 @@ const Footer = () => {
                   <a
                     href="https://twitter.com/arysttoto"
                     aria-label="social-link"
-                    className="mr-6 text-[#CED3F6] hover:text-primary"
+                    className="mr-6 text-red-400 hover:text-primary"
                   >
                     <svg
                       width="19"
@@ -49,14 +49,14 @@ const Footer = () => {
                   <a
                     href="https://instagram.com/arysttoto"
                     aria-label="social-link"
-                    className="mr-6 text-[#CED3F6] hover:text-primary"
-                  >
+                    className="mr-6 text-blue-400 hover:text-primary"
+                  > 
                     <svg className="fill-current" width="18" height="17" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M32.0016 17.5996C24.1016 17.5996 17.6016 23.9996 17.6016 31.9996C17.6016 39.8996 24.0016 46.3996 32.0016 46.3996C39.9016 46.3996 46.3016 39.9996 46.3016 31.9996C46.3016 24.0996 39.9016 17.5996 32.0016 17.5996ZM32.0016 41.8996C26.6016 41.8996 22.1016 37.4996 22.1016 31.9996C22.1016 26.5996 26.5016 22.0996 32.0016 22.0996C37.4016 22.0996 41.8016 26.4996 41.8016 31.9996C41.8016 37.3996 37.4016 41.8996 32.0016 41.8996Z"/><path d="M47 11.5996C45 11.5996 43.5 13.1996 43.5 15.0996C43.5 16.9996 45.1 18.5996 47 18.5996C48.9 18.5996 50.5 16.9996 50.5 15.0996C50.5 13.1996 49 11.5996 47 11.5996Z"/><path d="M46.9008 1.7998H17.1008C8.60078 1.7998 1.80078 8.5998 1.80078 17.0998V46.9998C1.80078 55.3998 8.70078 62.2998 17.1008 62.2998H47.0008C55.4008 62.2998 62.3008 55.3998 62.3008 46.9998V17.0998C62.3008 8.5998 55.4008 1.7998 46.9008 1.7998ZM57.8008 46.8998C57.8008 52.8998 53.0008 57.6998 47.0008 57.6998H17.1008C11.1008 57.6998 6.30078 52.8998 6.30078 46.8998V17.0998C6.30078 11.0998 11.2008 6.2998 17.1008 6.2998H46.9008C52.9008 6.2998 57.7008 11.1998 57.7008 17.0998V46.8998H57.8008Z"/></svg>
                   </a>
                   <a
                     href="https://www.linkedin.com/in/arystan-kairbayev-4b9886279"
                     aria-label="social-link"
-                    className="mr-6 text-[#CED3F6] hover:text-primary"
+                    className="mr-6 text-green-400 hover:text-primary"
                   >
                     <svg
                       width="17"
@@ -183,11 +183,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="bg-primary/10 py-8">
+        <div className="bg-primary/10 py-3"> 
           <div className="container">
-            <p className="text-center text-base text-body-color dark:text-white">
-              © 2023 <a href="/" class="hover:underline">HelpMeSolve™</a>. All Rights Reserved.
-            </p>
+            <p className="flex justify-center text-center text-base text-body-color dark:text-white">
+              © 2023 <a href="/" class="hover:underline">HelpMeSolve™</a><span className="ml-2 hidden lg:block">All Rights Reserved</span>
+            </p> 
           </div>
         </div>
         <div className="absolute right-0 top-14 z-[-1]">

@@ -18,7 +18,7 @@
   padding: 8px 12px;
   margin: 4px;
   border-radius: 4px;
-  background-color: #000; /* Black background */
+  background-color: #000; /* Black background */ 
   color: #fff; /* White text */
   transition: background-color 0.3s, color 0.3s; /* Transition on hover */
 }

@@ -15,10 +15,10 @@ async function SolveProblem() {
 
     return ( 
         <>
-        <Breadcrumb
+        {/* <Breadcrumb
         pageName="Solve Problem Page"
         description="Need a step by step solution and a code to solve your problem?"
-        />
+        />  */}
         <SolveProblemForm session={ session }/>
         <Footer /> 
         </>

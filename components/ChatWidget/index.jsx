@@ -5,7 +5,7 @@ import { redirect } from 'next/navigation';
 
 function Redirect({ url }) {
     return redirect(url);  
-}
+}  
 export default function ChatWidget() {
     // State to manage the chatbot conversation
     const [steps, setSteps] = useState([

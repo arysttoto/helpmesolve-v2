@@ -13,7 +13,7 @@ export function Providers({ children }) {
     </ThemeProvider> 
     {/* chat widget */} 
     <ChatWidget /> 
-    {/* chat widget */}
+    {/* chat widget */} 
     <Toaster /> 
     </>
   );

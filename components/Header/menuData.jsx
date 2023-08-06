@@ -2,7 +2,7 @@ import { Menu } from "@/types/menu";
 
 const menuData = [
   {
-    id: 0,
+    id: 1,
     title: "Home",
     path: "/",
     newTab: false,
@@ -20,12 +20,6 @@ const menuData = [
   //   newTab: false,
   // },
   {
-    id: 1,
-    title: "Chat",
-    path: "/chat",
-    newTab: false,
-  },
-  {
     id: 2,
     title: "Solve",
     path: "/solve",
@@ -42,6 +36,12 @@ const menuData = [
     title: "More",
     newTab: false,
     submenu: [
+      {
+        id: 500,
+        title: "Chat",
+        path: "/chat",
+        newTab: false,
+      },
       {
         id: 50,
         title: "Contact Us",

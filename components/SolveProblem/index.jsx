@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import { Loader } from "../shared/icons"; 
 import { redirect } from "next/navigation";
 import { useState } from "react";
-
+import Breadcrumb from "@/components/Common/Breadcrumb";
 
 
 function SolveProblemForm(props) {
@@ -37,7 +37,12 @@ function SolveProblemForm(props) {
     return (
         <> 
         {loading ? <Loader /> : 
-        <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">  
+        <> 
+        <Breadcrumb
+                pageName="Solve Problem Page"
+                description="Need a step by step solution and a code to solve your problem?"
+                /> 
+        <section id="contact" className="overflow-hidden py-16 md:py-17 lg:py-14">  
           <div className="container">    
             <div className="-mx-4 flex flex-wrap">
               <div className="w-full px-4 lg:w-7/12 xl:w-8/12">   
@@ -47,7 +52,7 @@ function SolveProblemForm(props) {
                   "
                 > 
                   <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
-                    Need Help? Let's Solve!
+                    Let's Start!
                   </h2>
                   <p className="mb-12 text-base font-medium text-body-color">
                     The Solution takes only about a minute.
@@ -83,6 +88,7 @@ function SolveProblemForm(props) {
             </div>
           </div> 
         </section>
+        </> 
         }
         </>
     )

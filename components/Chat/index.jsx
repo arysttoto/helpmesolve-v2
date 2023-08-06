@@ -13,7 +13,7 @@ import toast from 'react-hot-toast'
 export const initialMessages = [
   {
     role: 'assistant',
-    content: 'Hi! I am an olympiad coding expert. Fire away with your questions!',
+    content: 'Hi! I am an coding interview expert. Ask me anything about the world of coding interviews and algorithms!',
   },
 ]            
 
@@ -38,8 +38,8 @@ const InputMessage = ({ input, setInput, sendMessage, loading }) => {
       const question_data = res.data
 
       setQuestion(question_data)
-      setInput(`Write code to solve this question: ${question_data.question}`)  
-    } catch (err) {
+      setInput(`${question_data.question}`)   
+    } catch (err) {  
       setQuestionError(err.message)
     } finally {
       setIsGeneratingQuestion(false) 
@@ -69,7 +69,7 @@ const InputMessage = ({ input, setInput, sendMessage, loading }) => {
       > 
         <div className="w-4 h-4">
           <AcademicCapIcon />
-        </div> {'Generate a Coding question for me'}
+        </div> {'Generate an interview question for me'} 
       </button>
       <div className="mx-2 my-4 flex-1 w-full md:mx-4 md:mb-[52px] lg:max-w-2xl xl:max-w-3xl">
         <div className="relative mx-2 flex-1 flex-col rounded-md border-black/10 bg-white shadow-[0_0_10px_rgba(0,0,0,0.10)] sm:mx-4">
