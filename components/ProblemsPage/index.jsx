@@ -34,6 +34,9 @@ function ProblemsPage({ session }) {
       if (problems.page_count === problems.current_page) { 
         setHasMore(false); 
       } 
+      else if (problems.page_count === 0) {
+        setHasMore(false);
+      } 
       else {
         setPage(page+1); 
       } 
