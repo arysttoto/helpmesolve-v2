@@ -26,7 +26,7 @@ function ProblemsPage({ session }) {
   const [page, setPage] = useState(1);
 
   const fetchMoreData = async () => {
-    try {
+    try { 
       const problems = await getProblemsPage(page, session.user.accessToken); // Fetch more data from your API
 
       setItems(prevItems => [...prevItems, ...(problems.problems)]); 
@@ -49,9 +49,13 @@ function ProblemsPage({ session }) {
     }
   };
 
-  useEffect(() => { 
-    fetchMoreData(); // Fetch initial data when the component mounts
+  useEffect(() => {  
+    fetchMoreData(); // Fetch initial data when the component mounts 
   }, []); 
+
+  if (items.length === 0) {
+    return <>Loading...</> 
+  } 
 
     return ( 
         <>

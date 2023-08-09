@@ -8,6 +8,7 @@ const getProblemsPage = async (page, access_token) => {
       "Content-Type": "application/json",
       "Authorization": `Bearer ${access_token}`
     }, 
+    cache: "no-store" 
   }) 
   .then(response => response.json()) 
   .then(data => { 
