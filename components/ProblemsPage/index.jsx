@@ -54,7 +54,7 @@ function ProblemsPage({ session }) {
   }, []); 
 
   if (items.length === 0) {
-    return <>Loading...</> 
+    return <SpinnerLoading />; 
   } 
 
     return ( 
