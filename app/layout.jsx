@@ -6,6 +6,13 @@ import { Suspense } from "react";
 import { Analytics } from '@vercel/analytics/react';
 
 
+export const metadata = {
+  title: "HelpMeSolve AI",
+  description: "HelpMeSolve AI Coding Algorithms and Interview expert.",
+  themeColor: "#FFF",
+};
+
+
 export default function RootLayout({ children }) {
   return (                
     <html suppressHydrationWarning lang="en">

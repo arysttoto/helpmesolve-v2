@@ -18,7 +18,7 @@ function SpinnerLoading() {
       <span class="sr-only">Loading...</span>
     </div> 
   ); 
-}
+} 
 
 function ProblemsPage({ session }) { 
   const [items, setItems] = useState([]);
