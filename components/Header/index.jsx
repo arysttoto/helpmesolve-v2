@@ -38,7 +38,7 @@ const Header = ({ session }) => {
   const handleSubmenu = (index) => {
     if (openIndex === index) {
       setOpenIndex(-1);
-    } else {
+    } else { 
       setOpenIndex(index);
     }
   };
@@ -53,10 +53,10 @@ const Header = ({ session }) => {
             ? "!fixed !z-[999] !bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition dark:!bg-primary dark:!bg-opacity-20"
             : "absolute"
         }`}
-      >
+      > 
         <div className="container">
-          <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-60 max-w-full px-4 xl:mr-12 py-6">
+          <div className="relative -mx-4 flex items-center justify-between"> 
+            <div className="w-60 max-w-full px-4 xl:mr-12 py-6"> 
               <Logo /> 
             </div>
             <div className="flex w-full items-center justify-between px-4">
@@ -106,8 +106,8 @@ const Header = ({ session }) => {
                             <a
                               onClick={() => handleSubmenu(index)}
                               className="flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0"
-                            >
-                              {menuItem.title}
+                            >   
+                              {menuItem.title}    
                               <span className="pl-3">
                                 <svg width="15" height="14" viewBox="0 0 15 14">
                                   <path
@@ -127,7 +127,7 @@ const Header = ({ session }) => {
                                   href={submenuItem.path}
                                   key={submenuItem.id}
                                   className="block rounded py-2.5 text-sm text-dark hover:opacity-70 dark:text-white lg:px-3"
-                                >
+                                > 
                                   {submenuItem.title} 
                                 </Link>
                               ))}

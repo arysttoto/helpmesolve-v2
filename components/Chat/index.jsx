@@ -38,7 +38,7 @@ const InputMessage = ({ input, setInput, sendMessage, loading }) => {
       const question_data = res.data
 
       setQuestion(question_data)
-      setInput(`${question_data.question}`)   
+      setInput(`${question_data.question}`)    
     } catch (err) {  
       setQuestionError(err.message)
     } finally {
