@@ -2,7 +2,7 @@
 
 **Your Way to a Dream Offer**
 
-**HelpMeSolve** is an AI-powered app designed to help users master algorithmic problem-solving for interviews. It offers a variety of tools for solving algorithmic questions, facilitating discussions, and honing interview skills.
+**HelpMeSolve FRONT-END** is an AI-powered app designed to help users master algorithmic problem-solving for interviews. It offers a variety of tools for solving algorithmic questions, facilitating discussions, and honing interview skills.
 
 ## Features
 - **Algorithmic Solutions:** Access AI-powered tools to solve and analyze algorithmic questions.
