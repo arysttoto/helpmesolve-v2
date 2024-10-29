@@ -1,8 +1,8 @@
-# [HelpMeSolve](https://github.com/arysttoto/helpmesolve-v2)
+# [HelpMeSolve FRONT-END](https://github.com/arysttoto/helpmesolve-v2)
 
 **Your Way to a Dream Offer**
 
-**HelpMeSolve FRONT-END** is an AI-powered app designed to help users master algorithmic problem-solving for interviews. It offers a variety of tools for solving algorithmic questions, facilitating discussions, and honing interview skills.
+**HelpMeSolve** is an AI-powered app designed to help users master algorithmic problem-solving for interviews. It offers a variety of tools for solving algorithmic questions, facilitating discussions, and honing interview skills.
 
 ## Features
 - **Algorithmic Solutions:** Access AI-powered tools to solve and analyze algorithmic questions.
